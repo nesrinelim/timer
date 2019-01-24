@@ -14,23 +14,7 @@ class App extends Component {
     this.reset=this.reset.bind(this)
    
   }
-  // reset (){
-  //   this.setState({
-  //     time: 0,
-  //   })
-  //  clearInterval(this.state.i)
-  // }
-  
-  // incr  () 
-  // { if ((this.state.i)){return}
-  // else{const i= setInterval(
-  //   () => { 
-  //     this.setState({
-  //       time: this.state.time + 1000
-  //     })
-  // },
-  //   1000
-  // ) }
+ 
 
 
 incr = () =>{
@@ -54,7 +38,7 @@ this.intervald = setInterval(
   this.setState({time : 0})
   this.stop()
   }
-  // }
+ 
   
   calculate_time(){
     let seconds = parseInt((this.state.time/1000)%60).toString(),
